@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="shortcut icon" type="image" href="Images/pizza-slice-solid.svg">
+    <title>Foodhut Resturant</title>
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-bar">
+                <div onclick="sideBarIcon()" class="nav-bar-icon">
+                    <a><img src="Images/bars-solid.svg" alt=""></a>
+                </div>
+                <div class="side-bar">
+                    <ul class="side-list">
+                        <div class="cancel" onclick="removeSideBar()">x</div>
+                        <li class="list__item"><a href="index.html">Home</a></li>
+                        <li class="list__item"><a href="#about">About</a></li>
+                        <li class="list__item"><a href="#gallary">Gallary</a></li>
+                        <li class="list__item"><a href="#book-table">Book-Table</a></li>
+                        <li class="list__item"><a href="#blog">Blog</a></li>
+                        <li class="list__item"><a href="#reveiws">Reviews</a></li>
+                        <li class="list__item"><a href="#contact-us">Contact Us</a></li>
+                        <li class="list__item"><button type="button" class="component-btn">Components</button></li>
+                    </ul>
+                </div>
+                <div class="nav-list">
+                    <ul class="list">
+                        <li class="list__item"><a href="index.html">Home</a></li>
+                        <li class="list__item"><a href="#about">About</a></li>
+                        <li class="list__item"><a href="#gallary">Gallary</a></li>
+                        <li class="list__item"><a href="#book-table">Book-Table</a></li>
+                    </ul>
+                </div>
+                <div class="logo"><a href="index.html"><img src="Images/FoodhutLogo.svg" alt="foodhut logo"></a></div>
+                <div class="nav-list">
+                    <ul class="list">
+                        <li class="list__item"><a href="#blog">Blog</a></li>
+                        <li class="list__item"><a href="#reveiws">Reviews</a></li>
+                        <li class="list__item"><a href="#contact-us">Contact Us</a></li>
+                        <li class="list__item"><button type="button" class="component-btn">Components</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Web Banner -->
+        <section class="banner">
+            <div class="banner-img">
+                    <div class="banner-content">
+                        <h1>FoodHut</h1>
+                        <p>Always fresh & Delightful</p>
+                        <a class="view-gallary-btn" href="#gallary">View Our Gallary</a>
+                    </div>
+            </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- About Section -->
+        <section class="about-box">
+            <div class="about-img"><img src="Images/monika-grabkowska-P1aohbiT-EY-unsplash.jpg" alt="Pankakes in a pan with blueberies"></div>
+            <div class="about-content">
+                <h2 id="about" class="about-heading">About Us</h2>
+                <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod rerum magnam illum id deleniti.Nemo ex ratione officiis corporis inventore distinctio natus neque iste enim molestias nostrum deleniti dolorem beatae repellendus aperiam ipsam soluta laborum. <br/><br/> Dolor aliquam nisi in, quibusdam animi aliquid minima blanditiis praesentium ex, saepe nesciunt laudantium, ea perferendis dolorum vero voluptatum omnis laboriosam nemo! Deleniti temporibus suscipit iure accusamus deserunt.Quidem accusantium quisquam, ipsa nihil recusandae fugit quas omnis pariatur autem quod, magni sunt itaque veniam iure! Maiores in ad laboriosam cupiditate! Earum minus rem expedita aliquid voluptatibus, possimus iste libero illo adipisci nemo dolorum voluptate voluptatem, sit tenetur aut quo maiores saepe, nesciunt corporis pariatur eos optio provident fugit?</p>
+            </div>
+        </section>
+        <!-- Web Gallary -->
+        <section id="gallary" class="gallary box">
+            <h2>OUR MENU</h2>
+            <div class="gallary-img">
+                <div><img src="Images/lemonade.jpg" alt="a Glass of lemonade with ice"></div>
+                <div><img src="Images/meal-full.jpg" alt="Fresh salmon in yellow spice"></div>
+                <div><img src="Images/icecream.jpg" alt="Pink ice cream with tameshk"></div>              
+                <div><img src="Images/burger.jpg" alt="2 round burgers"></div>
+                <div><img src="Images/chocolatecake.jpg" alt="chocolate cake with sour fruits"></div>
+                <div><img src="Images/cookie.jpg" alt="half-eaten cookie with a glass of cofee"></div>
+                <div><img src="Images/donuts.jpg" alt="Bunch of donuts with cocoa"></div>
+                <div><img src="Images/honeypancake.jpg" alt="Pancakes with honey spread on them"></div>
+                <div><img src="Images/koofteh.jpg" alt="A red stew with circle meats"></div>
+                <div><img src="Images/mixsalad.jpg" alt="A salad mixed with grapes and vegetables and other fruits"></div>
+                <div><img src="Images/recipe!.jpg" alt="A healthy recipe"></div>
+                <div><img src="Images/spageti.jpg" alt="Spagetti with mashed fried meat"></div>
+            </div>
+        </section>
+        <!-- Booking Section -->
+        <section id="book-table" class="book-table box">
+            <div class="book-img">
+                <div class="book-form">
+                    <h3>BOOK A TABLE</h3>
+                    <form class="form" action="" method="post" enctype="multipart/form-data">
+                        <input type="email" name="email" id="email" minlength="10" maxlength="60" placeholder="EMAIL" required>
+                        <input type="number" name="number" id="number" placeholder="NUMBER OF GUESTS" required>
+                        <input type="time" name="time" id="time" required>
+                        <input type="date" name="date" id="date">
+                    </form>
+                    <div class="find-btn">
+                        <button id="find-table" type="submit">FIND TABLE</button>
+                    </div>
+                </div>  
+            </div>
+            <!-- Blog Section -->
+        </section>
+        <section id="blog" class="blog box">
+            <div class="blog-heading">
+                <h3>EVENTS AT THE FOOD HUT</h3>
+            </div>
+            <div class="blog-events">
+                <div class="events">
+                    <div class="blog-img">
+                        <img src="Images/burger.jpg" alt="Some burgers">
+                    </div>
+                    <div class="blog-btn">
+                        <button type="button">$5</button>
+                    </div>
+                    <div class="blog-content">
+                        <h5>Burger Land</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sunt eligendi quasi inventore tempora excepturi?</p>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="blog-img">
+                        <img src="Images/spageti.jpg" alt="Spagetti with mashed meat">
+                    </div>
+                    <div class="blog-btn">
+                        <button type="button">$7</button>
+                    </div>
+                    <div class="blog-content">
+                        <h5>Italiano</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis sapiente praesentium, ea omnis, natus, quaerat est.</p>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="blog-img">
+                        <img src="Images/honeypancake.jpg" alt="">
+                    </div>
+                    <div class="blog-btn">
+                        <button type="button">$11</button>
+                    </div>
+                    <div class="blog-content">
+                        <h5>Desert Hunter</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ex amet unde voluptate voluptatum quam minima.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider box">
+            <img src="Images/burger.jpg" alt="" class="slider-img slider-active-img">
+            <img src="Images/honeypancake.jpg" alt="" class="slider-img">
+            <img src="Images/recipe!.jpg" alt="" class="slider-img">
+            <i id="right-arrow" class="fa-solid fa-arrow-right right-arrow"></i>
+            <i id="left-arrow" class="fa-solid fa-arrow-left-long left-arrow"></i>
+        </section>
+    </main>
+    <br/><br/><br><br><br>
+    <hr/>
+    <!-- Footer & Contact Section -->
+    <footer>
+        <section id="contact-us" class="contact">    
+            <div class="contact-us">
+                <div class="contact-content">
+                    <h3>email us</h3>
+                    <p>kforoozanfar@gmail.com</p>
+                </div>
+                <div class="contact-content">
+                    <h3>call us</h3>
+                    <p>(+98) 0915***</p>
+                </div>
+                <div class="contact-content">
+                    <h3>find us</h3>
+                    <p>Torghabeh, Kami shishliki restaurant</p>
+                </div>
+            </div>
+        </section>
+        <p>&copy;Copyright 2022, Made by Kamran</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/5a4ed1467a.js" crossorigin="anonymous"></script>
+</body>
+</html>
